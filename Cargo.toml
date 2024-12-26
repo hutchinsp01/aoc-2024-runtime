@@ -1,0 +1,12 @@
+[package]
+name = "aoc-2024-runtime"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rayon = "1.5"
+
+[profile.release]
+lto = "fat"
+panic = "abort"
+codegen-units = 1
